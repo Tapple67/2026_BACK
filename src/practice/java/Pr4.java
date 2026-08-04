@@ -1,5 +1,4 @@
-package practice;
-
+package practice.java;
 import java.util.Scanner;
 
 public class Pr4 {
@@ -165,6 +164,20 @@ public class Pr4 {
     나이를 입력하세요: 22
     출력 예시: 10,000원 */
 
+    System.out.println("나이 입력: "); 
+    int num8 = scan.nextInt();
+    if (num8 < 20){
+        System.out.println("5,000원");
+
+    }else if(num8 < 65){
+        System.out.println("10,000원");
+    }else{
+        System.out.println("3,000원");
+
+    }
+
+
+
     /*[문제 9] Scanner를 이용해 하나의 점수를 입력받아 다음 조건에 따라 등급을 출력하는 프로그램을 작성하시오.
     90점 이상: 'A등급'
     80점 이상 90점 미만: 'B등급'
@@ -173,6 +186,20 @@ public class Pr4 {
     입력 예시:
     점수를 입력하세요: 85
     출력 예시: B등급 */
+
+    System.out.println("점수 입력: ");
+
+    int num9 = scan.nextInt();
+    if(num9 < 70) {
+        System.out.println("재시험");
+    }else if(num9 < 80){
+        System.out.println("C등급");
+    }else if(num9 < 90){
+        System.out.println("B등급");
+    }else{
+        System.out.println("A등급");
+    }
+
 
     /*[문제 10] Scanner를 이용해 총 구매 금액을 입력받습니다. 구매 금액에 따라 할인율을 적용하여 최종 결제 금액을 출력하는 프로그램을 작성하시오.
     50,000원 이상: 10% 할인
@@ -296,12 +323,12 @@ public class Pr4 {
         }else{
             if(b14>c14){
                 if(c14>a14){
-                    System.out.printf("%d %d %d", b14,c14,a14);
+                    System.out.printf("%d %d %d\n", b14,c14,a14);
                 }else{
-                    System.out.printf("%d %d %d", b14,a14,c14);
+                    System.out.printf("%d %d %d\n", b14,a14,c14);
                 }
             }else{
-                System.out.printf("%d %d %d", c14,b14,a14);
+                System.out.printf("%d %d %d\n", c14,b14,a14);
             }
             
         }
