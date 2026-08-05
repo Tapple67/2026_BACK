@@ -118,15 +118,15 @@ public class Pr4 {
     점수를 입력하세요: 750
     출력 예시: B급 경품 */
 
-    // System.out.println("점수 입력: ");
-    // int num6 = scan.nextInt();
+    System.out.println("점수 입력: ");
+    int num6 = scan.nextInt();
 
-    // if(num6 < 8){
-    //     System.out.println("보안 등급: 약함 (8자 이상으로 설정해주세요.)");
-    // }else if(pw4.length() >= 8 && pw4.length() <12){
-    //     System.out.println("보안 등급: 보통");
-    // }else{
-    //     System.out.println("보안 등급: 강함");
+    if(num6 < 8){
+        System.out.println("보안 등급: 약함 (8자 이상으로 설정해주세요.)");
+    }else if(pw4.length() >= 8 && pw4.length() <12){
+        System.out.println("보안 등급: 보통");
+    }else{
+        System.out.println("보안 등급: 강함");
     // }
 
     /*[문제 7] Scanner를 이용해 사용자 역할(role)을 문자열로 입력받습니다. 역할에 따라 다른 접근 권한 메시지를 출력하는 프로그램을 작성하시오.
@@ -364,5 +364,6 @@ public class Pr4 {
 
 
 
+    }
     }
 }
