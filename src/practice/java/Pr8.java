@@ -134,6 +134,7 @@ public class Pr8 {
         Goods g2 = new Goods("콜라", 2000);
 
         System.out.printf("g1| 이름:%s 가격:%d\n" , g1.name,g1.price);
+        System.out.printf("g2| 이름:%s 가격:%d\n" , g2.name,g2.price);
 
 
 
