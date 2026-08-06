@@ -13,6 +13,58 @@ class Book {
             }
         }
 
+class Rectangle {
+            int width;
+            int height;
+
+            public Rectangle(int width, int height) {
+                this.width = width;
+                this.height = height;
+            }
+
+        }
+
+class BankAccount{
+        String accountNumber;
+        String ownerName;
+        int balance;
+
+        public BankAccount(String accountNumber, String ownerName, int balance) {
+            this.accountNumber = accountNumber;
+            this.ownerName = ownerName;
+            this.balance = balance;
+        }
+            
+        }
+
+class Goods{
+            String name;
+            int price;
+
+            
+            public Goods() {
+            }
+
+
+            public Goods(String name, int price) {
+                this.name = name;
+                this.price = price;
+            }
+
+        
+        }
+
+class Member{
+    String id;
+    boolean isLogin;
+
+    public Member(String id, boolean isLogin) {
+        this.id = id;
+        this.isLogin = isLogin;
+    }
+
+    
+}
 public class Pr8 {
     public static void main(String[] args) {
         
@@ -43,16 +95,7 @@ public class Pr8 {
         main 함수에서 (10, 5) 값을 매개변수로 전달하여 Rectangle 객체를 생성하세요.
         생성된 객체의 width와 height 값을 각각 출력하세요.*/
 
-        class Rectangle {
-            int width;
-            int height;
-
-            public Rectangle(int width, int height) {
-                this.width = width;
-                this.height = height;
-            }
-
-        }
+    
         
         Rectangle r1 = new Rectangle(10, 5);
         System.out.printf("width: %d height: %d\n",r1.width, r1.height);
@@ -65,18 +108,7 @@ public class Pr8 {
         객체 생성 후, 해당 객체의 계좌번호, 예금주명, 잔액 정보를 출력하여 올바르게 초기화되었는지 확인하세요.*/
 
 
-        class BankAccount{
-            String accountNumber;
-            String ownerName;
-            int balance;
-
-            public BankAccount(String accountNumber, String ownerName, int balance) {
-                this.accountNumber = accountNumber;
-                this.ownerName = ownerName;
-                this.balance = balance;
-            }
-            
-        }
+        
 
         BankAccount B1 = new BankAccount("111-222-3333", "유재석", 10000);
         System.out.printf("계좌번호: %s 이름:%s 잔액:%d \n",B1.accountNumber,B1.ownerName,B1.balance);
@@ -93,22 +125,7 @@ public class Pr8 {
         기본 생성자로 생성한 객체
         매개변수 생성자를 통해 ("콜라", 2000) 정보로 생성한 객체*/
 
-        class Goods{
-            String name;
-            int price;
-
-            
-            public Goods() {
-            }
-
-
-            public Goods(String name, int price) {
-                this.name = name;
-                this.price = price;
-            }
-
-        
-        }
+    
 
         Goods g1 = new Goods();
         g1.name = "미정";
@@ -116,7 +133,7 @@ public class Pr8 {
 
         Goods g2 = new Goods("콜라", 2000);
 
-        System.out.printf("g1| 이름:%s 가격:%d" , g1.name,g1.price);
+        System.out.printf("g1| 이름:%s 가격:%d\n" , g1.name,g1.price);
 
 
 
@@ -126,8 +143,8 @@ public class Pr8 {
         Member 클래스에 기본 생성자를 만들고, 생성자 내부에서 id는 "guest", isLogin은 false로 초기화되도록 구현하세요.
         main 함수에서 new Member()로 객체를 생성한 뒤, 초기화된 id와 isLogin 값을 출력하여 확인하세요.*/
 
-
-
+        Member m1 = new Member("guest", false);
+        System.out.println(m1.id+ " " + m1.isLogin);
 
 
 
