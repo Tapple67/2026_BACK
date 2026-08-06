@@ -33,7 +33,6 @@ create Table members(
     
 )
 
-DESCRIBE members;
 
 -- [문제 2]
 
@@ -62,7 +61,7 @@ create Table products(
 )
 
 
-DESCRIBE products
+
 
 -- [문제 3]
 
@@ -293,4 +292,14 @@ create table reviews(
 
 )
 
+SHOW TABLES FROM practice2;
+DESCRIBE members;
+DESCRIBE products;
+DESCRIBE orders;
+DESCRIBE order_items;
+DESCRIBE students;
+DESCRIBE employees;
+DESCRIBE boards;
+DESCRIBE comments;
+DESCRIBE payments;
 DESCRIBE reviews;
