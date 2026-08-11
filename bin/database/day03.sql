@@ -23,7 +23,7 @@ INSERT into test(이름, 개수) VALUES("강호동",20) -- 번호 값 제외
 select * from test;
 
 insert into test(이름) VALUES("신동엽"); -- 번호(auto) , 계수(default) 제외한 삽입
-
+insert into test(이름) VALUES("노홍철");
 INSERT INTO test VALUES(4,"하하",30); -- 모든 속성값을 정의 순서대로 값 대입시 속성명 생략
 
 INSERT INTO test( 이름) VALUES("박명수") , ("수박"), ("바나나"); -- 3개의 레코드 삽입
