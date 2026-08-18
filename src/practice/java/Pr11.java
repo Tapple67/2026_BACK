@@ -108,7 +108,14 @@ public class Pr11 {
         1. .set(인덱스, 요소) 메소드를 사용하여 1번 인덱스의 "수학"을 "영어"로 수정하세요.
         2. 수정 후의 리스트 전체를 출력하여 결과가 올바른지 확인하세요.*/
 
+        ArrayList<String> list =new ArrayList<>();
 
+        list.add("국어");
+        list.add("수학");
+        list.add("사회");
+        list.add("과학");
+        list.set(1, "영어");
+        System.out.println(list.get(1));
 
 
     }
