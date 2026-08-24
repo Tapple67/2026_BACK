@@ -3,6 +3,7 @@ package practice.java;
 public class Pr13 {
     
     public static void main(String[] args) {
+        
         /*[문제 1] 기본 인터페이스와 구현
         1. "소리를 냅니다."라는 추상 메소드 makeSound()를 가진 Soundable 인터페이스를 정의하세요.
         2. Soundable 인터페이스를 구현(implements)하는 Cat 클래스와 Dog 클래스를 만드세요.
