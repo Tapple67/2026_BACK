@@ -36,6 +36,7 @@ public class BoardView {
         System.out.println("내용:"); String 내용 = scan.next();    //저장할 자료 입력
         System.out.println("작성자:"); String 작성자 = scan.next();
         BoardDto boardDto = new BoardDto(0,내용,작성자);  //자료 객체화
+        
         boolean result = bc.save(boardDto);
 
         if (result) {
